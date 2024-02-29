@@ -8,14 +8,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">01-jan-24</th>
-                <td>Get Groceries</td>
-                <td>No Action</td>
-            </tr>
-            <tr>
-                <th scope="row">02-jan-24</th>
-                <td>Work Out</td>
+            <tr *ngFor="let task of tasks">
+                <th scope="row">{{ task.date }}</th>
+                <td>{{ task.entry }}</td>
                 <td>No Action</td>
             </tr>
         </tbody>

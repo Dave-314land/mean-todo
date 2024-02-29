@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskDataService } from '../shared/task-data.component';
 import { Task } from '../shared/task.model';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-tasklist',
   standalone: true,
-  imports: [],
+  imports: [ NgFor ],
   templateUrl: './tasklist.component.html',
   styleUrl: './tasklist.component.css'
 })
