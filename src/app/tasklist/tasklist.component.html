@@ -2,6 +2,7 @@
     <table class="table table-striped">
         <thead>
             <tr>
+                <th scope="col">Id</th>
                 <th scope="col">Date</th>
                 <th scope="col">Task</th>
                 <th scope="col">Action</th>
@@ -9,7 +10,8 @@
         </thead>
         <tbody>
             <tr *ngFor="let task of tasks">
-                <th scope="row">{{ task.date }}</th>
+                <th scope="row">{{ task.id }}</th>
+                <td>{{ task.date }}</td>
                 <td>{{ task.entry }}</td>
                 <td>No Action</td>
             </tr>

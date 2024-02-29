@@ -1,5 +1,5 @@
 
 
 export class Task {
-    constructor(public date: String, public entry: string){}
+    constructor(public id: number, public date: String, public entry: string){}
 }
